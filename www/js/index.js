@@ -18,9 +18,22 @@
  */
  function myFunction()
   {
-	document.getElementById("bot").style.color="green";
-	document.getElementById("bu").style.visibility="visible";
-	document.getElementById("bu").style.margin="auto";
+	var cont=0;
+	if(cont==0)
+	{
+		document.getElementById("bot").style.color="green";
+		document.getElementById("bu").style.visibility="visible";
+		document.getElementById("bu").style.margin="auto";
+		cont=1;
+	}
+	else
+	{
+		document.getElementById("bot").style.color="red";
+		document.getElementById("bu").style.visibility="hidden";
+		document.getElementById("bu").style.margin="auto";
+		cont=0;
+	}
+	
  };
   
 var app = {
