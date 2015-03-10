@@ -16,11 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+ var cont=0;
  function myFunction()
   {
-	var cont=0;
+	
 	if(cont==0)
 	{
+	
 		document.getElementById("bot").style.color="green";
 		document.getElementById("bu").style.visibility="visible";
 		document.getElementById("bu").style.margin="auto";
