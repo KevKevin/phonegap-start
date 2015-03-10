@@ -32,12 +32,16 @@
     <body style="background-color:lightblue;">
         <div class="app">
             <h1>Kevin & Giovanni</h1>
-			<button>ciao</button>
+			<button id="bot" onclick="myFunction()" Style="color:red;">ciao</button>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Kevin is Ready</p>
             </div>
         </div>
+		<div class="blink" id="bu" style="background-color:red; width:100px; height:100px; visibility:hidden;">
+			bu
+		</div>
+		
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

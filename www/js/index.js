@@ -16,6 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+ function myFunction()
+  {
+	document.getElementById("bot").style.color="green";
+	document.getElementById("bu").style.visibility="visible";
+	document.getElementById("bu").style.margin="auto";
+ };
+  
 var app = {
     // Application Constructor
     initialize: function() {
