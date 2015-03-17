@@ -32,6 +32,7 @@
 	{
 		document.getElementById("bot").style.color="red";
 		document.getElementById("bu").style.visibility="hidden";
+		document.getElementById("bu").style.background="green";
 		document.getElementById("bu").style.margin="auto";
 		cont=0;
 	}

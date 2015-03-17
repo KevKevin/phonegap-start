@@ -28,17 +28,30 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Le vere applicazioni Serie</title>
+		<style>
+		@-webkit-keyframes mymove 
+		{
+			from {left: 0px;}
+			to {left: 200px;}
+		}
+
+		@keyframes mymove 
+		{
+			from {left: 0px;}
+			to {left: 200px;}
+		}
+		</style>
     </head>
     <body style="background-color:lightblue;">
         <div class="app">
             <h1>Kevin & Giovanni</h1>
-			<button id="bot" onclick="myFunction()" Style="color:red; width:15px; height:10px">ciao</button>
+			<button id="bot" onclick="myFunction()" Style="color:red; width:65px; height:40px">ciao</button>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Kevin is Ready</p>
             </div>
         </div>
-		<div class="blink" id="bu" draggable="true" style="background-color:red; width:100px; height:100px; visibility:hidden; ">
+		<div class="blink" id="bu"  draggable="true" style="background-color:red; width:100px; height:100px; visibility:hidden;position: relative; -webkit-animation: mymove 5s infinite; ">
 			bu
 		</div>
 		
