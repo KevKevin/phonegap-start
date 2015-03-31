@@ -28,21 +28,59 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Le vere applicazioni Serie</title>
-		<style>
+		<!--<style>
 		@-webkit-keyframes mymove 
 		{
-			from {left: 0px;}
-			to {left: 200px;}
+			from {left: -500px;}
+			to {left: 500px;}
+
+		}
+		@-webkit-keyframes mymovee
+		{
+			from {top: 0px;}
+			to {top: 500px;}
+		}
+		@-webkit-keyframes mymoveee
+		{
+			from {right: -1000px;}
+			to {right: 500px;}
 		}
 
-		@keyframes mymove 
-		{
-			from {left: 0px;}
-			to {left: 200px;}
-		}
-		</style>
+		
+		</style>-->
     </head>
-    <body style="background-color:lightblue;">
+    <body id="body" style="background-color:lightblue;">
+		<script type="text/javascript">
+<!--
+
+var stile = "top=10, left=10, width=250, height=200, status=no, menubar=no, toolbar=no scrollbars=no";
+
+function popup(apri) 
+{
+	 var x;
+    if (confirm("Consentire l'accesso alla posizione?") == true) {
+        x = "Hai acconsentito";
+    } else {
+        x = "Non hai acconsentito";
+    }
+	document.getElementById("demo").innerHTML = x;
+}
+//-->
+</script>
+<p id="demo"></p>
+<button id="pop" onclick="popup('apri')" Style="color:red; width:65px; height:40px">popup</button>
+<div data-role="page"> 
+ 
+        <div data-role="header"> 
+            <h1>titoloneeee</h1> 
+ 
+        </div> 
+ 
+        <div data-role="content"> 
+             contenutoneeeeeehytrhtrhhtrhtr
+             <a href="#" data-rel="back">Chiudi</a>    
+        </div> 
+    </div>
         <div class="app">
             <h1>Kevin & Giovanni</h1>
 			<button id="bot" onclick="myFunction()" Style="color:red; width:65px; height:40px">ciao</button>
@@ -51,9 +89,16 @@
                 <p class="event received">Kevin is Ready</p>
             </div>
         </div>
-		<div class="blink" id="bu"  draggable="true" style="background-color:red; width:100px; height:100px; visibility:hidden;position: relative; -webkit-animation: mymove 5s infinite; ">
+		<div class="blink" id="bu"  draggable="true" style="background-color:red; width:100px; height:100px;position: relative; -webkit-animation: mymove 0.2s infinite; ">
 			bu
 		</div>
+		<div class="blink" id="ye"  draggable="true" style="background-color:blue; width:100px; height:100px;position: relative; -webkit-animation: mymovee 0.2s infinite; ">
+			YEEEEEEEE
+		</div>
+		<div class="blink" id="yo"  draggable="true" style="background-color:yellow; width:100px; height:100px;position: relative; -webkit-animation: mymoveee 0.2s infinite; ">
+			YEEEEEEEE
+		</div>
+		
 		
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

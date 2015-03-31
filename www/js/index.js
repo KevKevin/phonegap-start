@@ -16,26 +16,52 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+ 
+ function poiue() 
+ {
+    document.getElementById("dialog").dialog({
+      autoOpen: false
+    });
+
+    document.getElementById("opener").click(function poiue() {
+       document.getElementById("dialog").dialog( "open" );
+    });
+  };
  var cont=0;
  function myFunction()
   {
-	
-	if(cont==0)
-	{
-	
+	//if(cont%2==0)
+	//{
+	//for(var i=1; i<0; i++)
+	//{
+	var cont=0;
+		if(cont%2==0)
+		{
+			document.getElementById("body").style.background="black";
+			cont=cont++;
+		}
+		setInterval(5);
+		if(cont%2==1)
+		{
+			document.getElementById("body").style.background="white";.
+			cont=cont++;
+		}
+	//}
 		document.getElementById("bot").style.color="green";
 		document.getElementById("bu").style.visibility="visible";
-		document.getElementById("bu").style.margin="auto";
-		cont=1;
-	}
-	else
+		document.getElementById("ye").style.margin="50px 10px 20px 30px";
+		document.getElementById("yo").style.margin="500px 100px 200x 300px";
+		cont=cont++;
+	//}
+/*else
 	{
+	
 		document.getElementById("bot").style.color="red";
 		document.getElementById("bu").style.visibility="hidden";
 		document.getElementById("bu").style.background="green";
 		document.getElementById("bu").style.margin="auto";
-		cont=0;
-	}
+		//cont=0;
+	}*/
 	
  };
   
